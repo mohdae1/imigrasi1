@@ -1,0 +1,13 @@
+/* MAINTAIN WRAPPER HEIGHT */
+$(document).ready(function () {
+    let navbarHeight = $('header').height();
+    let footerHeight = $('footer').height();
+    let wrapper = $('#wrapper');
+
+    if (wrapper.data('navbar') == 'transparent') navbarHeight = 0;
+
+    if(navbarHeight) navbarHeight = navbarHeight - marginTop;
+    // console.log(navbarHeight, marginTop)
+
+    $('#wrapper').css({ minHeight: 'calc( 100vh - ' + navbarHeight + 'px - ' + footerHeight + 'px )', marginTop: navbarHeight + 'px' });
+});

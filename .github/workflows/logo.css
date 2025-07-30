@@ -1,0 +1,20 @@
+.logo-title {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.logo-title .head-title {
+    line-height: 20px;
+    font-size: 14px;
+}
+.logo-title .sub-title {
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 3.5px;
+}
+
+.float-left {
+    float: left;
+}
